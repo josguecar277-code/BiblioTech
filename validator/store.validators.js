@@ -32,7 +32,7 @@ const  owner = check("owner", "El Dueño es obligatorio")
 .length({min: 3, max : 60}).withMessage("El nombre del dueño debe tener entre 3 y 60 caracteres")
 .custom ((value) => {
     if (value.toLowerCase().includes("owner")) {
-        throw new Error("El nombre de ldueño no puede contener la palabra 'owner'");
+        throw new Error("El nombre del dueño no puede contener la palabra 'owner'");
     }
   return true;
 });

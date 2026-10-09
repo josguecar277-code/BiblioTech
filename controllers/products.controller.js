@@ -103,7 +103,7 @@ export const deleteProduct = async (req, res, next) => {
 
 
 
-export const updateStock = async (req,res, next) => {
+export const updateStockProduct = async (req,res, next) => {
     try {
         const product = await Producto.findById (req.params.id);
 
